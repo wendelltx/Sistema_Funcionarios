@@ -3,8 +3,8 @@
 Este projeto consiste em um sistema de gerenciamento de pessoal desenvolvido em Java, permitindo o cadastro de colaboradores, controle de status (ativo/inativo) e cálculos automatizados de folha salarial por departamento.
 
 ### 🛠️ Tecnologias Utilizadas
-* **Linguagem:** Java 17
-* **IDE:** (Ex: VS Code / Eclipse / IntelliJ)
+* **Linguagem:** Java 21
+* **IDE:** VS Code e Eclipse 
 * **Controle de Versão:** Git & GitHub
 
 ### 🚀 Como Executar o Projeto
