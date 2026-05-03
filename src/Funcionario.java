@@ -43,7 +43,6 @@ public class Funcionario {
 
     public void demitir() {
         this.ativo = false;
-        System.out.println("Funcionário " + this.nome + " demitido!");
     }
 
     public void exibirDados() {

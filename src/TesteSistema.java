@@ -9,7 +9,6 @@ public class TesteSistema {
 		Funcionario f3 = new Funcionario("Pedro", "333.444.555-66", "Desenvolvedor", 3500.00);
 		Funcionario f4 = new Funcionario();
 
-		f4.alterarDados("João", "222.333.444-55", "Analista", 2800.00);
 
 		f4.alterarDados("João Gabriel", "555.667.889-01", "Estagiario", 800.00);
 
@@ -20,7 +19,7 @@ public class TesteSistema {
 
 		f1.aplicarReajuste(15.0);
 
-		f2.demitir();
+		f3.demitir();
 
 		adm.listarFuncionarios();
 

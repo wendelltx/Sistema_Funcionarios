@@ -1,17 +1,17 @@
 
 public class Departamento {
     private String nomeDepartamento;
-    private Funcionario[] colaboradores;
+    private Funcionario[] funcionarios;
     private int contador = 0;
 
     public Departamento(String nomeDepartamento) {
-        this.colaboradores = new Funcionario[5];
+        this.funcionarios = new Funcionario[5];
         this.nomeDepartamento = nomeDepartamento;
     }
 
     public void adicionarFuncionario(Funcionario f) {
         if (contador < 5) {
-            colaboradores[contador] = f;
+            funcionarios[contador] = f;
             contador++;
         } else {
             System.out.println("Departamento lotado. Não é possível adicionar mais funcionários.");
@@ -21,8 +21,8 @@ public class Departamento {
     public double calcularFolhaSalarial() {
         double calculoFolha = 0.0;
         for (int i = 0; i < this.contador; i++) {
-            if (this.colaboradores[i].isAtivo()) {
-                calculoFolha += this.colaboradores[i].getSalario();
+            if (this.funcionarios[i].isAtivo()) {
+                calculoFolha += this.funcionarios[i].getSalario();
             }
         }
         return calculoFolha;
@@ -30,7 +30,7 @@ public class Departamento {
 
     public void listarFuncionarios() {
         for (int i = 0; i < this.contador; i++) {
-            this.colaboradores[i].exibirDados();
+            this.funcionarios[i].exibirDados();
         }
     }
 }
